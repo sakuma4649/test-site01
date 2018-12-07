@@ -1,0 +1,176 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.5em;
+}
+html,body{
+  font-family: "M PLUS Rounded 1c";
+}
+li{
+  list-style-type: none;
+}
+a:link	{
+	text-decoration: none;
+}
+.hum-menu{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-200%);
+  transition: all 0.6s;
+}
+.hum-menu ul{
+  background: #fff9;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0;
+}
+.hum-menu ul li{
+  font-size: 1.1em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.hum-menu.active{
+  transform: translateY(0%);
+}
+.toggle{
+  display: block;
+  position: fixed;
+  right: 13px;
+  top: 8px;
+  width: 42px;
+  cursor: pointer;
+  z-index: 3;
+      height: 40px;
+}
+.toggle span{
+  display: block;
+  position: absolute;
+  width: 30px;
+  border-bottom: solid 3px #000;
+  -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
+  -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
+  transition: .35s ease-in-out;			/*変化の速度を指定*/
+  left: 6px;
+}
+.toggle span:nth-child(1){
+  top: 9px;
+}
+.toggle span:nth-child(2){
+  top: 18px;
+}
+.toggle span:nth-child(3){
+  top: 27px;
+}
+.toggle.active span:nth-child(1){
+  top: 18px;
+  left: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.toggle.active span:nth-child(2),
+.toggle.active span:nth-child(3){
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.kv{
+  background: url(../img/kv.jpg) no-repeat center;
+  width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+        top: 55px;
+}
+.kv h1{
+  position: absolute;
+    top: 100px;
+    left: 6vw;
+    color: white;
+}
+.kv p{
+  position: absolute;
+  top: 34vh;
+    left: 6vw;
+  color: white;
+}
+.kv :last-child{
+  background-color: black;
+  top: 60vh;
+  left: 70vw;
+  color: white;
+  padding: 10px 20px;
+}
+/*
+nav{
+  display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 90%;
+margin: 0 auto;
+}
+nav ul{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li{
+  display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: black;
+    border: solid 2px black;
+    border-radius: 3px;
+    transition: .4s;
+}
+nav ul li:hover {
+  background: black;
+    color: white;
+    border: solid 2px black;
+}*/
+.logo img{
+  width: 50px;
+      vertical-align: text-top;
+      position: absolute;
+      left: 5px;
+      top:2px;
+}
+.member{
+  margin-top: 100px;
+  width: 100%;
+}
+.member h2{
+  text-align: center;
+margin-bottom: 36px;
+}
+.member-item{
+width: 80%;
+margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+      justify-content: center;
+        /*  align-items: center;*/
+        transition:  2s;
+}
+.member-item img{
+  width: 30%;
+  align-self: flex-start;
+
+}
+.member-caption{
+  display: flex;
+  flex-direction: column;
+      padding-left: 30px;
+          width: 60%;
+}
