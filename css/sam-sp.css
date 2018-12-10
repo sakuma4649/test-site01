@@ -16,7 +16,10 @@ flex-direction: column;
   height: 400px;
 background: url(../img/back-ground.jpg) bottom center no-repeat fixed;
   background-color: black;
-  -webkit-background-size:cover;
+  -webkit-background-size: cover;/* Safari,Google Chrome用 */
+      -moz-background-size: cover;  /* Firefox用 */
+      -o-background-size: cover;  /* Opera用 */
+          background-size: cover; 
 }
 .caption{
   margin:5% auto;
