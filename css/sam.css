@@ -1,0 +1,107 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.5em;
+}
+html,body{
+  font-family: "M PLUS Rounded 1c";
+}
+li{
+  list-style-type: none;
+}
+a:link	{
+	text-decoration: none;
+}
+.first-view{
+  display: flex;
+flex-direction: column;
+  height: 700px;
+  background: url(../img/back-ground.jpg) center center / cover no-repeat fixed;
+  background-color: black;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.first-view h1{
+  background-color: white;
+  color: black;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 3;
+}
+.first-view img{
+width: 500px;
+margin: 0 auto;
+}
+.profile{
+  display: flex;
+  /* width: 100%; */
+  overflow: hidden;
+  align-items: center;
+    margin: auto;
+    width: 700px;
+}
+
+.profile img{
+  width: 150px;
+  padding: 25px;
+}
+.profile p{
+padding: 10px 0;
+}
+.caption ul p{
+  text-align: center;
+}
+.caption li:nth-child(odd){
+  background-color: whitesmoke;
+}
+.caption{
+  margin:0 auto;
+}
+.title{
+  width: 100%;
+  background-color: black;
+  margin: 5% auto;
+}
+.title h2{
+  color: white;
+  text-align: center;
+}
+section {
+  width: 700px;
+  margin:  0 auto;
+}
+.caption ul{
+      margin: 0 10px;
+}
+.contents{
+
+}
+.fellows-item{
+  display: flex;
+  margin: 5% auto;
+  width: 700px;
+  overflow: hidden;
+}
+.fellows-item ul{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fellows-item li{
+  width: 125px;
+  padding: 10px;
+}
+footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-top: 5%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
