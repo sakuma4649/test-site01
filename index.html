@@ -4,93 +4,138 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/sam.css">
-  <link rel="stylesheet" href="css/sam-sp.css" media="screen and (max-width:700px)">
-  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script type="text/javascript">
-$(function(){
-  $(".first-view").css("opacity","1");
-  $(".contents").css("opacity","0").css("transition","0s").css("margin-top","20vh");
-  $(window).scroll(function(){
-    $(".contents").each(function(){
-    var imgPos = $(this).offset().top;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll > imgPos - windowHeight + windowHeight/4){
-      $(this).css("opacity","1" ).css("transition","1s").css("margin-top","0vh");
-    } else {
-      $(this).css("opacity","0" ).css("transition","1s");
-    }
-  });
-});
-});
-</script>
+  <title>こけしプリン本舗　テストサイト</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main-sp.css" media="screen and (max-width:700px)">
+  <script type="text/javascript">
+
+  </script>
 </head>
 <body>
   <div class="wrapper">
-    <div class="first-view">
-      <h1>SAM RHYME</h1>
-      <!--<img src="img/logo.jpg">-->
+    <div class="logo">
+      <img src="img/logo.png" alt="">
     </div>
-    <div class="contents">
-      <div class="title"><h2>THE PROFILE</h2></div>
-      <section>
-        <h3>Hello I'm SAM RHYME</h3>
-              <p>
-              Im a marco polo born in HEISEI era.
-            The shape of face is like a TAMAGO bolo.
-          Roamed web market after graduated univ.
-        Skills that i grown up while then is like an INROU.
-      But i have a pride.
-    Dont force me do meaningless jobs.
-    I'd reject such as pathetic jobs.
-    Because i'm an immortal as programmer.
-    Be a fullstack human resource someday.
-    So i cant stuck at such as miserable place.
-    Voyage has just began.
-    Dont let you down
-    </p>
-      </section>
-      <div class="profile">
-        <img src="img/logo.jpg" >
-        <div class="caption">
-                <ul>
-                  <p>BIOGRAPHY</p>
-                  <li>1993:Born in SAITAMA</li>
-                  <li>2014:Achieved as singer</li>
-                  <li>2017:Start job as programmer while continue his music</li>
-                  <li>2018:Became a freelance Programmer</li>
-                </ul>
-        </div>
-        </div>
-    </div>
-    <div class="contents">
-      <div class="title"><h2>THE FELLOWS</h2></div>
-      <section>
-        <h3>These are dependable alliances of us</h3>
-              <p>
-                We have been trying to solve problems and difficulties with tons of  friendships. <br>
-              Here are our friendships below.
-    </p>
-      </section>
-      <div class="fellows">
-        <div class="fellows-item">
-          <ul>
-            <li><img src="img/item01.jpg" alt="" width="125px"></li>
-            <li><img src="img/item02.jpg" alt="" width="125px"></li>
-            <li><img src="img/item03.jpg" alt="" width="125px"></li>
-            <li><img src="img/item04.jpg" alt="" width="125px"></li>
-            <li><img src="img/item05.jpg" alt="" width="125px"></li>
-            <li><img src="img/item06.jpg" alt="" width="125px"></li>
-          </ul>
+    <nav>
+      <ul>
+        <a href="#menu">
+          <li>お品書き<br>
+          <apan style="font-size: 0.7em;">Menu</apan></li>
+        </a>
+
+        <li>お知らせ<br>
+        <apan style="font-size: 0.7em;">Info</apan></li>
+        <li>メディア掲載情報<br>
+        <apan style="font-size: 0.7em;">Media</apan></li>
+        <li>交通アクセス<br>
+        <apan style="font-size: 0.7em;">Access</apan></li>
+        <li>連絡先<br>
+        <apan style="font-size: 0.7em;">Contact</apan></li>
+      </ul>
+    </nav>
+    <div class="kv">
+      <div class="slide">
+        <div class="slide-contents">
+
         </div>
       </div>
+      <div class="about">
+        <h1>こけしプリン本舗とは</h1>
+        <p>
+          1400年以上の歴史をもつ福島県土湯温泉にあらたな名物が誕生しました。 <br>
+          福島を代表する「川俣シャモ」のたまごと、郡山を拠点にオリジナル商品を展開する酪王乳業の牛乳を使用、 <br>
+          福島産のハチミツで優しい甘さに仕上げた「こけしプリン」です。 <br>
+           <br>
+          ぜひ、湯けむり昇る土湯温泉で、新作スイーツを食べながらゆったりしたひとときをお過ごしくださいませ。 <br>
+        </p>
+      </div>
     </div>
-    <footer>
-      SAM RHYME a.k.a Nao chang 2019 ©️
-    </footer>
+    <section>
+      <div class="menu" id="menu">
+                    <div class="section-title">
+                              <h1>お品書き</h1>
+                    </div>
+
+        <div class="flex-content">
+          <div class="flex-item">
+
+            <h2>こけしプリン</h2>
+            <img src="img/items/item01.jpg" alt="">
+            <p>
+              <span style="font-size:1.2em" >
+                380円（税込）
+              </span><br>
+              <span style="font-size:0.7em" >
+                内容量：80g
+              </span><br>
+こけしプリンは福島県の厳選素材を活かしたプリンです。 福島三大地鶏の「川俣シャモ」の卵と福島県産の生乳のみを使った酪王牛乳 を使用し福島の味覚を味わうことができます。 また、隠し味も福島で採れたはちみつを使用しており、 まさに福島の素材を最大限活かした美味しいプリンとなっております。
+            </p>
+          </div>
+          <div class="flex-item">
+            <h2>こけしプリン 3個入り</h2>
+            <img src="img/items/item02.jpg" alt="">
+            <p>
+              <span style="font-size:1.2em; " >
+              1,140円（税込）
+              </span><br>
+              <span style="font-size:0.7em">
+                内容量：80g×3個
+              </span><br>
+              こけしプリンをオリジナルのパッケージに入れたこけしプリン3個入りもご用意しております。 是非、福島の観光土産としてご家族・お友達にどうぞ。
+※冷蔵でのご提供になります。
+            </p>
+          </div>
+          <div class="flex-item">
+            <h2>こけしプリン 6個入り</h2>
+            <img src="img/items/item03.jpg" alt="">
+            <p>
+              <span style="font-size:1.2em">
+              2,280円（税込）
+              </span><br>
+              <span style="font-size:0.7em" >
+                内容量：80g×6個
+              </span><br>
+              こけしプリンをオリジナルのパッケージに入れたこけしプリン6個入りもご用意しております。 是非、福島の観光土産としてご家族・お友達・職場などにどうぞ。
+※冷蔵でのご提供になります。
+            </p>
+          </div>
+          <div class="flex-item">
+            <h2>こけしプリン</h2>
+            <img src="img/items/item04.jpg" alt="">
+            <p>
+              <span style="font-size:1.2em" >
+                900円（税込）
+              </span><br>
+              <span style="font-size:0.7em" >
+                内容量：200g
+              </span><br>
+              こけしプリンは福島県の厳選素材を活かしたプリンです。 福島三大地鶏の「川俣シャモ」の卵と福島県産の生乳のみを使った酪王牛乳 を使用し福島の味覚を味わうことができます。 また、隠し味も福島で採れたはちみつを使用しており、 まさに福島の素材を最大限活かした美味しいプリンとなっております。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="info">
+
+      </div>
+    </section>
+    <section>
+      <div class="media">
+
+      </div>
+    </section>
+    <section>
+      <div class="access">
+
+      </div>
+    </section>
+    <section>
+      <div class="contact">
+
+      </div>
+    </section>
   </div>
 </body>
 </html>
