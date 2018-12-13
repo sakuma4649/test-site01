@@ -8,8 +8,23 @@
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/main-sp.css" media="screen and (max-width:700px)">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript">
-
+$(function(){
+  $("section").css("opacity","0").css("transition","0s").css("margin-top","5vh");
+  $(window).scroll(function(){
+    $("section").each(function(){
+    var imgPos = $(this).offset().top;
+    var scroll =$(window).scrollTop();
+    var screenHeight =$(window).height();
+    if(scroll > imgPos - screenHeight + screenHeight/4){
+      $(this).css("opacity","1").css("transition","1s").css("margin-top","0vh");
+    }else{
+      $(this).css("opacity","0");
+    }
+    });
+  });
+});
   </script>
 </head>
 <body>
