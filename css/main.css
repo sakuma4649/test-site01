@@ -3,7 +3,7 @@ pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  line-height: 1.5em;
+  line-height: 1.7em;
 }
 html,body{
   font-family: "M PLUS Rounded 1c";
@@ -32,20 +32,24 @@ padding: 10px;
 .logo img{
   width: 200px;
 }
-nav ul{
+.menu-pc nav ul{
   margin-bottom: 20px;
   display: flex;
   justify-content:space-around;
 }
-nav ul li{
+.menu-pc nav ul li{
 text-align: center;
 font-size: 1em;
+}
+.menu-pc nav ul li:hover{
+color: #555;
 }
 .slide{
   width: 50vw;
   height: 60vh;
   overflow: hidden;
   background: url(../img/test-kv-pc.jpg)no-repeat center/cover;
+      background-size: contain;
 }
 
 .kv{
@@ -75,7 +79,7 @@ padding: 20px;
 }
 .section-title{
   width: 100%;
-  margin: 20px auto;
+  margin: 40px auto;
   height: 110px;
   justify-content: center;
   align-items: center;
@@ -83,8 +87,31 @@ padding: 20px;
   overflow: hidden;
   background: url(../img/menu.png) center center / cover no-repeat fixed;
 }
+.section-title02{
+  width: 100%;
+  margin: 40px auto;
+  height: 110px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  background:  url(../img/info.jpg) center center / cover no-repeat fixed;
+}
 .section-title h1{
   color: #FFF;
+}
+.section-title02 h1{
+  color: #FFF;
+}
+.fb-news{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fb-news img{
+  width: 500px;
+    margin: 20px auto;
 }
 .flex-content{
   display: flex;
@@ -112,3 +139,91 @@ padding: 20px;
 p.item-cap{
   text-align: left;
 }
+
+/*hamburger menu*/
+.hum-menu{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: #FFF4;
+  color: #000;
+  text-align: center;
+  transform: translateY(-300%);
+  transition: all 0.6s;
+  width: 100%;
+  height: 100%;
+}
+
+.hum-menu ul{
+  margin: 50px  auto;
+      padding: 10px;
+      width: 80%;
+}
+.hum-menu ul li{
+  width: 60%;
+  background-color: #FFF;
+  padding: 10px 20px;
+  margin: 10px auto;
+}
+
+.hum-menu.active{
+  transform: translateY(0%);
+}
+
+.toggleMenu{
+    display:contents;
+    display: block;
+    position: fixed;    /* bodyに対しての絶対位置指定 */
+    right: 13px;
+    top: 35px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    z-index: 3;
+    background: #FFF2;
+    text-align: center;
+}
+
+.toggleMenu span {
+    display: block;
+    position: absolute;    /* .navToggleに対して */
+    width: 30px;
+    border-bottom: solid 3px #333;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+}
+
+.toggleMenu span:nth-child(1) {
+    top: 9px;
+}
+
+.toggleMenu span:nth-child(2) {
+    top: 18px;
+}
+
+.toggleMenu span:nth-child(3) {
+    top: 27px;
+}
+
+/* 最初のspanをマイナス45度に */
+.toggleMenu.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* 2番目と3番目のspanを45度に */
+.toggleMenu.active span:nth-child(2),
+.toggleMenu.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*hamburger menu done*/

@@ -10,6 +10,17 @@
   <link rel="stylesheet" href="css/main-sp.css" media="screen and (max-width:700px)">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript">
+  $(function(){
+    $(".hum-menu,.toggleMenu").click(function(){
+      $(this).toggleClass("active");
+
+      if($(this).hasClass("active")){
+        $(".hum-menu,.toggleMenu").addClass("active");
+      }else{
+        $(".hum-menu,.toggleMenu").removeClass("active");
+      }
+    });
+  });
 $(function(){
   $("section").css("opacity","0").css("transition","0s").css("margin-top","5vh");
   $(window).scroll(function(){
@@ -33,22 +44,31 @@ $(function(){
       <img src="img/logo.png" alt="">
     </div>
     <nav>
-      <ul>
-        <a href="#menu">
-          <li>お品書き<br>
-          <apan style="font-size: 0.7em;">Menu</apan></li>
-        </a>
+      <!--hum menu-->
+      <div class="hum-menu">
+        <ul class="hum-menu-ul">
 
-        <li>お知らせ<br>
-        <apan style="font-size: 0.7em;">Info</apan></li>
-        <li>メディア掲載情報<br>
-        <apan style="font-size: 0.7em;">Media</apan></li>
-        <li>交通アクセス<br>
-        <apan style="font-size: 0.7em;">Access</apan></li>
-        <li>連絡先<br>
-        <apan style="font-size: 0.7em;">Contact</apan></li>
-      </ul>
+            <li><a href="#menu">お品書き<br>
+            <apan style="font-size: 0.7em;">Menu</apan></a></li>
+          <li>お知らせ<br>
+          <apan style="font-size: 0.7em;">Info</apan></li>
+          <li>メディア掲載情報<br>
+          <apan style="font-size: 0.7em;">Media</apan></li>
+          <li>交通アクセス<br>
+          <apan style="font-size: 0.7em;">Access</apan></li>
+          <li>連絡先<br>
+          <apan style="font-size: 0.7em;">Contact</apan></li>
+        </ul>
+
+      </div>
+      <div class="toggleMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!--hum menu-->
     </nav>
+<!-- -->
     <div class="kv">
       <div class="slide">
         <div class="slide-contents">
@@ -136,7 +156,12 @@ $(function(){
     </section>
     <section>
       <div class="info">
-
+        <div class="section-title02">
+                  <h1>お知らせ</h1>
+        </div>
+        <div class="fb-news">
+          <img src="img/news-image.png" alt="">
+        </div>
       </div>
     </section>
     <section>
@@ -154,6 +179,9 @@ $(function(){
 
       </div>
     </section>
+    <footer>
+
+    </footer>
   </div>
 </body>
 </html>
