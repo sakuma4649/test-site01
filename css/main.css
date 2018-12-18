@@ -97,10 +97,28 @@ padding: 20px;
   overflow: hidden;
   background:  url(../img/info.jpg) center center / cover no-repeat fixed;
 }
+.section-title03{
+  width: 100%;
+  margin: 40px auto;
+  height: 110px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  background:  url(../img/access.jpg) center center / cover no-repeat fixed;
+}
+.map {
+  width: 90%;
+  margin: 20px auto;
+      padding-bottom: 20px;
+}
 .section-title h1{
   color: #FFF;
 }
 .section-title02 h1{
+  color: #FFF;
+}
+.section-title03 h1{
   color: #FFF;
 }
 .fb-news{
@@ -112,11 +130,13 @@ padding: 20px;
 .fb-news img{
   width: 500px;
     margin: 20px auto;
+        padding-bottom: 20px;
 }
 .flex-content{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 .flex-item{
   width: 280px;
@@ -227,3 +247,10 @@ p.item-cap{
 }
 
 /*hamburger menu done*/
+.media{
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      background-color: antiquewhite;
+}
