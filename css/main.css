@@ -177,12 +177,21 @@ p.item-cap{
       width: 80%;
 }
 .hum-menu ul li{
+  border-radius: 5px;
+  border: solid 0.5px #aaa;
   width: 60%;
   background-color: #FFF;
   padding: 10px 20px;
   margin: 10px auto;
 }
-
+.hum-menu ul li:hover{
+  border-radius: 5px;
+  border: solid 0.5px #aaa;
+  width: 60%;
+  background-color: #EEE;
+  padding: 10px 20px;
+  margin: 10px auto;
+}
 .hum-menu.active{
   transform: translateY(0%);
 }
@@ -256,6 +265,7 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 40px auto;
 }
 footer p{
   text-align: center;
